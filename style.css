@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:iztal,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
@@ -96,6 +96,7 @@ color: var(--Pale-blue);
 
 .response{
   height: 60px;
+  gap: 40px;
  
 
    
@@ -104,24 +105,25 @@ color: var(--Pale-blue);
 }
 
 .reaction-1{
-background: rgba(254,242,248,255);
+background: hsla(0, 100%, 67%,0.2);
  height: 40px;
-  width: 300px;
+  width: 100%;
  margin: 20px 0;
- padding: 10px;
+ padding: 20px;;
   display: flex;
  justify-content: space-evenly;
      border-radius: 15px;
 }
 
 .reaction-1 p{
-  color: #f18e8e;
+  font-weight: 900;
+  color: hsl(0, 100%, 67%);
 }
 .reaction-2{
-background: hsl(41, 88%, 94%);
+background: hsla(39, 100%, 56%,0.2);
  height: 40px;
-  width: 300px;
-   padding: 10px;
+  width: 100%;
+   padding: 20px;
  margin: 20px 0;
  display: flex;
  justify-content: space-evenly;
@@ -134,27 +136,27 @@ background: hsl(41, 88%, 94%);
   font-weight: 700;
 }
 .reaction-3{
-background: rgba(242,253,249,255);
+background: hsla(166, 100%, 37%, 0.2);
  height: 40px;
-  width: 300px;
+  width: 100%;
  margin: 20px 0;
   display: flex;
-     padding: 10px;
+    padding: 20px;
  justify-content: space-evenly;
      border-radius: 15px;
 }
 
 .reaction-3 p{
-  color:rgba(186,237,231,255);
+  color:hsl(166, 100%, 37%);
   font-weight: 700;
 }
 .reaction-4{
 
-background:hsl(231, 100%, 97%);
+background:hsla(234, 85%, 45%, 0.2);
  height: 40px;
-  width: 300px;
+   width: 100%;
  margin: 20px 0;
-    padding: 10px;
+    padding: 20px;
   display: flex;
  justify-content: space-evenly;
      border-radius: 15px;
@@ -162,8 +164,10 @@ background:hsl(231, 100%, 97%);
 
 
 .reaction-4 p{
-  color:  rgba(125,133,201,255);
-  font-weight: 700;
+  color: hsl(234, 85%, 45%);
+    font-family: 'Kumbh Sans' sans-serif;
+    
+  font-weight: 900;
 }
 .span-2{
   color: hsl(191, 6%, 51%);
@@ -191,15 +195,24 @@ button{
       padding-bottom: 10px;
 }
 
-@media screen and{(max-witdth:780px)} {
+@media screen and (max-width:780px ){
   
   .main-container{
-    width: 100%;
-    display: grid;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;  
+    margin: 0;
+    padding: 0;
+    
+    
   }
   .left{
     width: 100%;
-  }
+    
+  } 
   .right{
     width: 100%;
   }
